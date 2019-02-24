@@ -8,7 +8,7 @@ import se.solrike.configuration.JerseyConfig;
 import se.solrike.resources.ComponentMarker;
 
 @SpringBootApplication(scanBasePackageClasses = {ComponentMarker.class, JerseyConfig.class})
-@PropertySource("classpath:myapi-application.properties")
+@PropertySource("classpath:myapi-app.properties")
 public class MySpringApplication {
 
   public static void main(String[] args) {
