@@ -19,9 +19,11 @@ public class JerseyConfig extends ResourceConfig {
   private final static Logger logger = LoggerFactory.getLogger(JerseyConfig.class);
 
   @Autowired
-  public JerseyConfig(@Value("${spring.jersey.applicationPath}") String basePath) {
+  public JerseyConfig(@Value("${spring.jersey.application-path}") String basePath) {
 
     logger.info("Registering Jersey ...");
+    
+    
 
     String servicePackage = ComponentMarker.class.getPackage().getName();
     packages(servicePackage);
